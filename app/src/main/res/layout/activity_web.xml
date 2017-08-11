@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/web_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@color/red_1_color"
+        android:scrollbarSize="5dp"></WebView>
+    <RelativeLayout
+        android:id="@+id/video_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="200dp"
+        android:visibility="gone">
+    <SurfaceView
+        android:id="@+id/live_tv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"/>
+        <WebView
+            android:id="@+id/web_list_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:fadeScrollbars="false"
+            android:background="#00000000"
+            android:scrollbarThumbVertical="@color/red_1_color"
+            android:scrollbarSize="5dp"
+            android:visibility="gone"></WebView>
+
+    </RelativeLayout>
+</RelativeLayout>
